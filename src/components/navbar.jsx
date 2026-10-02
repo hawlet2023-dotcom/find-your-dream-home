@@ -1,47 +1,42 @@
-
+import search from "../assets/icons/search.png";
+import user from "../assets/icons/user2.png";
+import logo from "../assets/icons/logo.png";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="h-[90px] w-full bg-[#FDFBF9] px-[8%] flex items-center justify-between">
 
-      <div className="logo">
-        Dwello
+      {/* Logo */}
+      <img
+        src={logo}
+        alt="Dwello"
+        className="w-[105px] object-contain"
+      />
+
+      {/* Navigation */}
+      <div className="hidden md:flex items-center gap-[70px] text-[15px] font-semibold text-[#2B211D]">
+        <a href="#" className="hover:opacity-60">Home</a>
+        <a href="#" className="hover:opacity-60">Service</a>
+        <a href="#" className="hover:opacity-60">Agents</a>
+        <a href="#" className="hover:opacity-60">Contact</a>
       </div>
 
-      <ul className="nav-links">
-        <li>Home</li>
-        <li>Service</li>
-        <li>Agents</li>
-        <li>Contact</li>
-      </ul>
+      {/* Right side */}
+      <div className="flex items-center gap-20">
 
-      <div className="nav-right">
+        <img
+          src={search}
+          alt="Search"
+          className="w-[23px] h-[23px] object-contain"
+        />
 
-        {/* Search icon */}
-        <svg
-          className="nav-icon"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-4-4" />
-        </svg>
+        <img
+          src={user}
+          alt="User"
+          className="w-[23px] h-[23px] object-contain"
+        />
 
-        {/* User icon */}
-        <svg
-          className="nav-icon"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <circle cx="12" cy="8" r="4" />
-          <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" />
-        </svg>
-
-        <button className="nav-button">
+        <button className="bg-[#2B211D] text-white px-7 py-3 rounded-lg text-sm font-semibold">
           Sign up
         </button>
 
