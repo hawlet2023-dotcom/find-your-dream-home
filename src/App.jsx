@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import WhyChooseUs from "./components/WhyChooseUs";
 import PopularResidences from "./components/PopularResidences";
-
+import About from "./components/About";
 function App() {
   return (
     <>
@@ -10,6 +10,7 @@ function App() {
       <HomePage />
       <WhyChooseUs />
       <PopularResidences />
+      <About/>
     </>
   );
 }
